@@ -29,6 +29,11 @@
 
     * { box-sizing: border-box; }
 
+    ::selection {
+      background: rgba(240, 210, 167, .82);
+      color: var(--ink);
+    }
+
     html { scroll-behavior: smooth; }
 
     body {
@@ -375,7 +380,7 @@
 
     .services {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 1rem;
     }
 
@@ -831,11 +836,16 @@
           </article>
           <article class="service reveal">
             <div class="service-number">03</div>
+            <h3>Projection Routière</h3>
+            <p>Étude de tracé en plan, profil en long, profils en travers, terrassements, drainage routier et avant-métré pour préparer des projets cohérents et exploitables.</p>
+          </article>
+          <article class="service reveal">
+            <div class="service-number">04</div>
             <h3>Route et infrastructures</h3>
             <p>Analyse technique, suivi de travaux, lecture de plans et contribution aux projets liés à la route et aux aménagements.</p>
           </article>
           <article class="service reveal">
-            <div class="service-number">04</div>
+            <div class="service-number">05</div>
             <h3>SIG et cartographie</h3>
             <p>Production de cartes, analyse géospatiale et visualisation de données avec QGIS et ArcGIS pour mieux décider.</p>
           </article>
@@ -865,6 +875,18 @@
             <p>
               Je porte également <strong>Hing</strong>, un projet d'innovation dédié au suivi de chantier et à l'automatisation des tâches répétitives, avec l'ambition de rendre la gestion de construction plus simple, transparente et mesurable.
             </p>
+            <p>
+              Je suis aussi membre actif d'<strong>Innov Group</strong>, une initiative orientée vers l'innovation technologique, la recherche appliquée et le développement de solutions intelligentes pour le secteur du BTP et des infrastructures.
+            </p>
+            <p>
+              Au sein du groupe, je participe à la conception de projets intégrant le développement logiciel, l'intelligence artificielle, l'automatisation et l'analyse technique des données afin d'apporter des solutions adaptées aux problématiques réelles du terrain.
+            </p>
+            <p>
+              Innov Group constitue également un cadre de collaboration multidisciplinaire favorisant la recherche, la créativité et le développement de technologies innovantes à fort impact.
+            </p>
+            <p>
+              En parallèle, <strong>Software Genius</strong> représente mon ancrage dans le code : un groupe de codeurs passionnés où l'on apprend, partage des idées, relève des défis techniques et transforme progressivement les connaissances en projets concrets.
+            </p>
           </div>
           <div class="reveal">
             <figure class="profile-portrait">
@@ -875,6 +897,7 @@
               <li><b>Formation</b><span>ENSTP UNSTIM d'Abomey, génie civil spécialité Route</span></li>
               <li><b>Approche</b><span>Précision technique, rigueur terrain et outils digitaux</span></li>
               <li><b>Projet</b><span>Hing, solution de suivi de chantier et d'automatisation des tâches en cours de développement</span></li>
+              <li><b>Groupes</b><span>Innov Group pour l'innovation BTP et Software Genius pour la pratique du code en équipe</span></li>
             </ul>
           </div>
         </div>
