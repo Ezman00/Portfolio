@@ -3,9 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio d'Ezekias AGLOSSI, ingénieur génie civil spécialisé en route, dimensionnement structurel, plans architecturaux et suivi de chantier au Bénin." />
+  <meta name="description" content="Portfolio officiel d'Ezekias AGLOSSI, ingénieur génie civil au Bénin spécialisé en infrastructures routières, dimensionnement structurel, plans architecturaux, suivi de chantier et automatisation BTP." />
+  <meta name="author" content="Ezekias AGLOSSI" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="Ezekias AGLOSSI, ingénieur génie civil Bénin, ingénieur civil Abomey-Calavi, infrastructures routières, dimensionnement structurel, plans architecturaux, suivi de chantier, automatisation BTP, projection routière, Hing, Software Genius, Innov Group" />
+  <meta name="google-site-verification" content="B1xAWac2Pu2pxR7WY2XQpgdGXRyX3g3JPezY1vCZoHE" />
   <title>Ezekias AGLOSSI | Ingénieur Génie Civil au Bénin</title>
+  <link rel="canonical" href="https://ezekiasagl.vercel.app/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Ezekias AGLOSSI" />
+  <meta property="og:title" content="Ezekias AGLOSSI | Ingénieur Génie Civil au Bénin" />
+  <meta property="og:description" content="Ingénieur génie civil spécialisé en infrastructures routières, dimensionnement structurel, conception de plans architecturaux, suivi de chantier et solutions numériques pour le BTP." />
+  <meta property="og:url" content="https://ezekiasagl.vercel.app/" />
+  <meta property="og:image" content="https://ezekiasagl.vercel.app/IMG_20260305_122955.jpg.jpeg" />
+  <meta property="og:image:alt" content="Portrait professionnel d'Ezekias AGLOSSI en tenue de chantier" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ezekias AGLOSSI | Ingénieur Génie Civil au Bénin" />
+  <meta name="twitter:description" content="Portfolio officiel d'Ezekias AGLOSSI : génie civil, infrastructures routières, suivi de chantier, automatisation et solutions numériques pour le BTP." />
+  <meta name="twitter:image" content="https://ezekiasagl.vercel.app/IMG_20260305_122955.jpg.jpeg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ezekias AGLOSSI",
+      "url": "https://ezekiasagl.vercel.app/",
+      "image": "https://ezekiasagl.vercel.app/IMG_20260305_122955.jpg.jpeg",
+      "jobTitle": "Ingénieur génie civil",
+      "description": "Ingénieur en génie civil spécialisé en infrastructures routières, dimensionnement structurel, conception de plans architecturaux, suivi de chantier et automatisation des tâches techniques dans le secteur du BTP.",
+      "email": "mailto:ezekiasaglossi0000@gmail.com",
+      "telephone": "+22998403695",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Abomey-Calavi",
+        "addressCountry": "BJ"
+      },
+      "knowsAbout": [
+        "Génie civil",
+        "Infrastructures routières",
+        "Dimensionnement structurel",
+        "Suivi de chantier",
+        "Projection routière",
+        "Automatisation BTP",
+        "Développement logiciel"
+      ],
+      "sameAs": [
+        "https://ezekiasaglossi.base44.app/"
+      ]
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
@@ -431,6 +478,36 @@
 
     .about-copy strong { color: var(--white); }
 
+    .about-more {
+      display: none;
+    }
+
+    .about-more.is-open {
+      display: block;
+    }
+
+    .about-toggle {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: .35rem;
+      padding: .72rem 1rem;
+      border: 1px solid rgba(240, 210, 167, .58);
+      border-radius: 6px;
+      background: rgba(240, 210, 167, .12);
+      color: #f0d2a7;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .about-toggle:hover {
+      background: rgba(240, 210, 167, .2);
+      transform: translateY(-1px);
+    }
+
     .proof-list {
       display: grid;
       gap: .75rem;
@@ -696,8 +773,11 @@
         grid-template-columns: 1fr;
       }
 
-      .hero-panel { justify-self: start; }
-      .portrait-card { justify-self: start; }
+      .hero-panel { justify-self: center; }
+      .portrait-card {
+        justify-self: center;
+        margin-inline: auto;
+      }
       .services,
       .experience-grid,
       .skills-wrap { grid-template-columns: repeat(2, 1fr); }
@@ -747,6 +827,9 @@
       }
 
       .hero-actions { margin-bottom: 2rem; }
+      .portrait-card {
+        width: min(100%, 430px);
+      }
       .section { padding: 4.5rem 0; }
       .services,
       .experience-grid,
@@ -872,21 +955,24 @@
             <p>
               Mon parcours combine le terrain, le calcul et les outils numériques. Je suis aussi cofondateur de <strong>Software Genius</strong>, un collectif de développeurs qui se forment, collaborent et progressent ensemble.
             </p>
-            <p>
-              Je porte également <strong>Hing</strong>, un projet d'innovation dédié au suivi de chantier et à l'automatisation des tâches répétitives, avec l'ambition de rendre la gestion de construction plus simple, transparente et mesurable.
-            </p>
-            <p>
-              Je suis aussi membre actif d'<strong>Innov Group</strong>, une initiative orientée vers l'innovation technologique, la recherche appliquée et le développement de solutions intelligentes pour le secteur du BTP et des infrastructures.
-            </p>
-            <p>
-              Au sein du groupe, je participe à la conception de projets intégrant le développement logiciel, l'intelligence artificielle, l'automatisation et l'analyse technique des données afin d'apporter des solutions adaptées aux problématiques réelles du terrain.
-            </p>
-            <p>
-              Innov Group constitue également un cadre de collaboration multidisciplinaire favorisant la recherche, la créativité et le développement de technologies innovantes à fort impact.
-            </p>
-            <p>
-              En parallèle, <strong>Software Genius</strong> représente mon ancrage dans le code : un groupe de codeurs passionnés où l'on apprend, partage des idées, relève des défis techniques et transforme progressivement les connaissances en projets concrets.
-            </p>
+            <div class="about-more" id="about-more">
+              <p>
+                Je porte également <strong>Hing</strong>, un projet d'innovation dédié au suivi de chantier et à l'automatisation des tâches répétitives, avec l'ambition de rendre la gestion de construction plus simple, transparente et mesurable.
+              </p>
+              <p>
+                Je suis aussi membre actif d'<strong>Innov Group</strong>, une initiative orientée vers l'innovation technologique, la recherche appliquée et le développement de solutions intelligentes pour le secteur du BTP et des infrastructures.
+              </p>
+              <p>
+                Au sein du groupe, je participe à la conception de projets intégrant le développement logiciel, l'intelligence artificielle, l'automatisation et l'analyse technique des données afin d'apporter des solutions adaptées aux problématiques réelles du terrain.
+              </p>
+              <p>
+                Innov Group constitue également un cadre de collaboration multidisciplinaire favorisant la recherche, la créativité et le développement de technologies innovantes à fort impact.
+              </p>
+              <p>
+                En parallèle, <strong>Software Genius</strong> représente mon ancrage dans le code : un groupe de codeurs passionnés où l'on apprend, partage des idées, relève des défis techniques et transforme progressivement les connaissances en projets concrets.
+              </p>
+            </div>
+            <button class="about-toggle" type="button" aria-expanded="false" aria-controls="about-more">Voir plus</button>
           </div>
           <div class="reveal">
             <figure class="profile-portrait">
@@ -1099,6 +1185,15 @@
         menuButton.setAttribute("aria-expanded", "false");
         menuButton.textContent = "☰";
       }
+    });
+
+    const aboutToggle = document.querySelector(".about-toggle");
+    const aboutMore = document.querySelector("#about-more");
+
+    aboutToggle.addEventListener("click", () => {
+      const isOpen = aboutMore.classList.toggle("is-open");
+      aboutToggle.setAttribute("aria-expanded", String(isOpen));
+      aboutToggle.textContent = isOpen ? "Voir moins" : "Voir plus";
     });
 
     const observer = new IntersectionObserver((entries) => {
